@@ -40,7 +40,7 @@ int main(int argc, char * argv[]){
         printf("Values entered cannot be negitive!\n");
         return 0;
     }
-    
+
     // calling the total function to retun the totals
     try_total = Totals(usr_try, try);
     conversion_total = Totals(usr_conversion, conversion);
@@ -51,6 +51,6 @@ int main(int argc, char * argv[]){
     totalScore = (try_total + conversion_total + penalty_total + drop_goal_total);
 
     printf("The total score for this match was: %d\n", totalScore);
-    
+
     return 0;
 }
