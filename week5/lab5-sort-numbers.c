@@ -37,15 +37,11 @@ int main(int argc, char*argv[]){
         pfunction = desc;
         pfunction(numbers, length);
     }
-    
+
     /* printing out each element in the function */
-    printf("Sorted numbers: ");
+    printf("Sorted numbers:");
     for(int i = 0; i < length; i++) {
-        if (i == length - 1) {
-            printf("%d", numbers[i]);  // Print the last element without a trailing space
-        } else {
-            printf("%d ", numbers[i]);  // Print the element followed by a space
-        }
+            printf(" %d", numbers[i]);  // Print the element followed by a space
     }
     printf("\n");
 

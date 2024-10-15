@@ -21,7 +21,7 @@ typedef struct Country
 
 
 int main(int argc, char*argv[]){
-    
+
 
     printf("Country\t\t\tCapital\t\t\tSize\t\t\tPopulation\n"); // printing out the top line
     int cCount = 0;
@@ -32,7 +32,7 @@ int main(int argc, char*argv[]){
         country[cCount].city = argv[i + 1];
         country[cCount].size = atoi(argv[i + 3]);
         country[cCount].population = atof(argv[i + 2]);
-        
+
 
         /* Printing the country information */
         printf("%s\t\t\t%s\t\t\t%d\t\t\t%.2f\n", country[cCount].name, country[cCount].city, country[cCount].size, country[cCount].population);
