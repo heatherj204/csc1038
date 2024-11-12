@@ -7,20 +7,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// function prototypes
 void parseInput(char *argv[], int argc, int *pNumbers);
 int findNumber(int *pNumbers, int argc);
 
+// main function
 int main(int argc, char *argv[]){
 
-    /* dynamically allocating memory for the array of numbers */
+    //dynamically allocating memory for the array of numbers
     int *pNumbers = (int*)calloc(argc - 1, sizeof(int));
 
-    parseInput(argv, argc, pNumbers);   //parsing the input to create the array of numbers
+    //parsing the input to create the array of numbers
+    parseInput(argv, argc, pNumbers);
+
     int result = findNumber(pNumbers, argc);
 
     printf("%d\n", result);
 
-    free(pNumbers); //freeing memory
+    //freeing memory
+    free(pNumbers);
     return 0;
 }
 

@@ -49,6 +49,5 @@ float getSecond(float *pNumbers, int argc){
             secondMax = pNumbers[i];
         }
     }
-
     return secondMax;
 }
