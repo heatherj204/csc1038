@@ -39,8 +39,6 @@ int main(int argc, char*argv[])
 Student parseStudent(Student student)
 {
     FILE *pFile = NULL;
-    // Open a file with read-binary mode
-    pFile = fopen(FILE_NAME, "rb");
     if (!pFile)
     {
         printf("Error opening file for writing\n");

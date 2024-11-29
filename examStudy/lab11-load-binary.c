@@ -20,7 +20,7 @@ Student getInput(Student student);
 void printStudent(Student student);
 
 // Defining file name
-// #define FILE_NAME = "studentBinary.bin"
+// #define FILE_NAME "studentBinary.bin"
 
 // Main function
 int main(int argc, char* argv[]){
