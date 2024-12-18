@@ -77,14 +77,18 @@ Node* getNode(int n, char* argv[]){
     current->prev = NULL;
 
     //Creating and filling in data for each node
-    for (int i = 4; i < n + 4; i = i + 3){
+    for (int i = 4; i < n * 3; i++){
+        printf("%d\n", i);
         current->next = (Node*)calloc(1, sizeof(Node));
         prev = current;  //Getting the prev node before moving to the next node
         current = current->next;  //Moving the current pointer to the next node
         //Setting information for the first node
-        strcpy(current->name, (argv[i + 1]));
-        strcpy(current->author, (argv[i + 2]));
-        current->year = atoi(argv[i + 3]);
+        strcpy(current->name, (argv[i++]));
+        printf("%d\n", i);
+        strcpy(current->author, (argv[i++]));
+        printf("%d\n", i);
+        current->year = atoi(argv[i++]);
+        printf("%d\n", i);
         current->prev = prev;
     }
     current->next = NULL; //There is no pointer to the next node as there is no next node
